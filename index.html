@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="music_container">
+            <h2 id="title">Song name</h2>
+            <h3 id="artist">Artist</h3>
+            <div class="image">
+                <img id="song_image" src="images/song-1.webp" alt="">
+            </div>
+            <audio src="songs/song-1.mp3" ></audio>
+
+            <!-- sleek -->
+
+            <div class="slider">
+                <input type="range"  value="0" class="seek-bar">
+                <span class="current-time">00:00</span>
+                <span class="song-duration">00:00</span>
+            </div>
+
+            <!-- controls -->
+
+            <div class="control">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play play_btn" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
