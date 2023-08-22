@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(228, 227, 227);
+    display: grid;
+    place-items: center;
+}
+
+.music_container{
+    width: 35rem;
+    height: 55rem;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgb(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 2rem;
+
+}
+
+#title{
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #171717;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+}
+
+#artist{
+    font-family: 'Cinzel', serif;
+    font-weight: 200;
+    font-size: 2rem;
+    color: #a1a1a1;
+    text-transform: uppercase;
+    
+}
+
+.image img{
+    box-shadow: 0 1.2rem 3rem 0.5rem rgb(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+
+.slider{
+    /* background-color: rgb(170, 111, 39); */
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    position: relative;
+}
+
+.seek-bar{
+    -webkit-appearance: none;
+    border-radius: 1rem;
+    height: 0.7rem;
+    width: 100%;
+    cursor: pointer;
+    background: rgb(19, 19, 18);
+    overflow: hidden;
+
+}
+
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    background: rgb(111, 110, 110);
+    box-shadow: -40rem 0 0 40rem rgb(189, 189, 188) ;
+}
+
+.current-time,
+.song-duration{
+    font-size: 1.4rem;
+}
+
+.song-duration{
+    position: absolute;
+    right: 0;
+}
+
+.current-time{
+    position: absolute;
+    left: 0;
+}
+
+.control{
+    display: flex;
+    margin: 3rem auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+}
+
+.control .fas{
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.control .play_btn{
+    color: #fff;
+    background-color: #171717;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.control .fas:hover{
+    color: #a1a1a1;
+}
+
+.control .play_btn:hover{
+    background-color: #fff;
+    color: #171717;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgb(0, 0, 0, 0.4);
+}
+
+.rotate {
+    animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
