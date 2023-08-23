@@ -5,6 +5,7 @@ html{
 }
 
 .main{
+    margin: 0 0;
     width: 100vw;
     height: 100vh;
     background-color: rgb(228, 227, 227);
@@ -13,6 +14,8 @@ html{
 }
 
 .music_container{
+    /* margin: 20px 20px ; */
+    box-sizing: border-box;
     width: 35rem;
     height: 55rem;
     box-shadow: 0 1.2rem 3rem 0.5rem rgb(0, 0, 0, 0.2);
@@ -41,6 +44,8 @@ html{
 }
 
 .image img{
+    height: 20rem;
+    width: 20rem;
     box-shadow: 0 1.2rem 3rem 0.5rem rgb(0, 0, 0, 0.4);
     border-radius: 50%;
 }
@@ -48,7 +53,7 @@ html{
 .slider{
     /* background-color: rgb(170, 111, 39); */
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     width: 100%;
     position: relative;
 }
@@ -90,7 +95,7 @@ html{
 
 .control{
     display: flex;
-    margin: 3rem auto;
+    margin: 1rem auto;
     justify-content: space-between;
     align-items: center;
     width: 20rem;
@@ -98,15 +103,15 @@ html{
 
 .control .fas{
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .control .play_btn{
     color: #fff;
     background-color: #171717;
     border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     justify-content: center;
     align-items: center;
     display: flex;
